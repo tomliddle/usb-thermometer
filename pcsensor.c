@@ -445,18 +445,18 @@ int main( int argc, char **argv) {
 
               printf("pcsensor\n");
            } else {
-              printf("%04d/%02d/%02d %02d:%02d:%02d ", 
-                          local->tm_year +1900, 
-                          local->tm_mon + 1, 
-                          local->tm_mday,
-                          local->tm_hour,
-                          local->tm_min,
-                          local->tm_sec);
+              //printf("%04d/%02d/%02d %02d:%02d:%02d ", 
+              //            local->tm_year +1900, 
+              //            local->tm_mon + 1, 
+              //            local->tm_mday,
+              //            local->tm_hour,
+              //            local->tm_min,
+              //            local->tm_sec);
 
               if (formato==2) {
                   printf("Temperature %.2fF\n", (9.0 / 5.0 * tempc + 32.0));
               } else if (formato==1) {
-                  printf("Temperature %.2fC\n", tempc);
+                  printf("%.2f\n", tempc + 2.95);
               } else {
                   printf("Temperature %.2fF %.2fC\n", (9.0 / 5.0 * tempc + 32.0), tempc);
               }
