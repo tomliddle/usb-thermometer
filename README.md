@@ -1,6 +1,12 @@
 usb-thermometer: TEMPer1 and TEMPer1F
 ===============
 
+### From Tom Liddle:
+
+Modified output for format 1 to remove all date and formatting to just include the temperature.
+A temperature adjustment of 2.95c was added owing to a low reading. This may need to be adjusted
+for each particular sensor.
+
 ### From Pete Chapman:
 
 * Fixed poor precision for TEMPer1F (iProduct string "TEMPer1F_V1.3").
